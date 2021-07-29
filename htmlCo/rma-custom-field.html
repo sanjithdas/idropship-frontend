@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+        <meta charset="utf-8">
+       	<title>Custom Fields</title>
+       	<link href="css/reset.css" media="screen" rel="stylesheet">
+       	<link href="css/font-awesome.min.css" media="screen" rel="stylesheet">
+       	<link href="css/bootstrap.css" media="screen" rel="stylesheet">
+      	<link href="css/styles.css" media="screen" rel="stylesheet">
+      	<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+
+	</head>
+	<body>
+		<!-- Menu bar -->
+		<div class="menu-wrapper _fixed">
+			<nav class="admin__menu">
+				<ul id="nav">
+					<li class="item-dashboard level-0">
+						<a href="dashboard.html">Dashboard</a>
+					</li>
+					<li class="item-sales current level-0">
+						<a href="#" class="disabled">Sales</a>
+						<div class="submenu">
+							<strong class="submenu-title">Sales</strong>
+							<a href="#" class="action-close disabled"></a>
+							<ul class="submenu">
+								<li class="column">
+									<ul>
+										<li class="parent">
+											<strong class="submenu-group-title">Operations</strong>
+											<div class="submenu">
+												<ul>
+													<li>
+														<a href="sales-order.html">Orders</a>
+													</li>
+													<li>
+														<a href="sales-batch-order-payments.html">Batch Order Payments</a>
+													</li>
+													<li>
+														<a href="sales-invoice.html">Invoices</a>
+													</li>
+													<li>
+														<a href="sales-shipments.html">Shipments</a>
+													</li>
+													<li>
+														<a href="sale-credit-memos.html">Credit Memos</a>
+													</li>
+													<li>
+														<a href="sales-transactions.html">Transactions</a>
+													</li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</li>
+								<li class="column">
+									<ul>
+										<li  class="parent">
+											<strong class="submenu-group-title">RMA by Aheadworks</strong>
+											<div class="submenu">
+												<ul>
+													<li>
+														<a href="rma-manage.html">Manage RMA</a>
+													</li>
+													<li>
+														<a href="rma-status.html">Statuses and Email Templates</a>
+													</li>
+													<li>
+														<a href="rma-custom-field.html">Custom Fields</a>
+													</li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="item-catalogue  level-0">
+						<a href="#"  class="disabled">Catalogue</a>
+						<div class="submenu">
+							<strong class="submenu-title">Catalogue</strong>
+							<a href="#" class="action-close disabled"></a>
+							<ul class="submenu">
+								<li class="column">
+									<ul>
+										<li class="parent">
+											<strong class="submenu-group-title">Inventory</strong>
+											<div class="submenu">
+												<ul>
+													<li>
+														<a href="catalog.html">Products</a>
+													</li>
+													<li>
+														<a href="category.html">Categories</a>
+													</li>
+													
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</li>
+								
+							</ul>
+						</div>
+					</li>
+					<li class="item-customers  level-0">
+						<a href="#"  class="disabled">Customers</a>
+						<div class="submenu">
+							<strong class="submenu-title">Customers</strong>
+							<a href="#" class="action-close disabled"></a>
+							<ul class="submenu">
+								<li class="column">
+									<ul>
+										<li class="parent">
+											<div class="submenu">
+												<ul>
+													<li>
+														<a href="customer-all.html">All Customers</a>
+													</li>
+													<li>
+														<a href="customer-online.html">Now Online</a>
+													</li>
+													<li>
+														<a href="customer-group.html">Customer Groups</a>
+													</li>
+													<li>
+														<a href="customer-notification.html">Notifications</a>
+													</li>
+
+												</ul>
+											</div>
+										</li>
+										<li class="parent">
+											<strong class="submenu-group-title">Help Desk</strong>
+											<div class="submenu">
+												<ul>
+													<li>
+														<a href="helpdesk-tickets.html">Tickets</a>
+													</li>
+													<li>
+														<a href="helpdesk-automations.html">Automations</a>
+													</li>
+													<li>
+														<a href="helpdesk-departments.html">Departments</a>
+													</li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</li>
+								
+							</ul>
+						</div>
+					</li>
+					<li class="item-marketing  level-0">
+						<a href="#" class="disabled">Marketing</a>
+						<div class="submenu">
+							<strong class="submenu-title">Marketing</strong>
+							<a href="#" class="action-close disabled"></a>
+							<ul class="submenu">
+								<li class="column">
+									<ul>
+										<li class="parent">
+											<strong class="submenu-group-title">Promotions</strong>
+											<div class="submenu">
+												<ul>
+													<li>
+														<a href="price-rules.html">Cart Price Rules</a>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li class="parent">
+											<strong class="submenu-group-title">Communications</strong>
+											<div class="submenu">
+												<ul>
+													<li>
+														<a href="email-template.html">Email Templates</a>
+													</li>
+													<li>
+														<a href="newsletter-template.html">Newsletter Template</a>
+													</li>
+													<li>
+														<a href="newsletter-queue.html">Newsletter Queue</a>
+													</li>
+													<li>
+														<a href="newsletter-subscriber.html">Newsletter Subscribers</a>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li class="parent">
+											<strong class="submenu-group-title">Advertising Channels</strong>
+											<div class="submenu">
+												<ul>
+													<li>
+														<a href="google-shopping-ads.html">Google Shopping ads</a>
+													</li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</li>
+								<li class="column">
+									<ul>
+										<li class="parent">
+											<strong class="submenu-group-title">SEO & Search</strong>
+											<div class="submenu">
+												<ul>
+													<li>
+														<a href="url-rewrites.html">URL Rewrites</a>
+													</li>
+													<li>
+														<a href="search-tearms.html">Search Tearms</a>
+													</li>
+													<li>
+														<a href="search-synonyms.html">Search Synonyms</a>
+													</li>
+													<li>
+														<a href="sitemap.html">Site Map</a>
+													</li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="item-wallet  level-0">
+						<a href="#" class="disabled">Wallet</a>
+						<div class="submenu">
+							<strong class="submenu-title">Wallet</strong>
+							<a href="#" class="action-close disabled"></a>
+							<ul class="submenu">
+								<li class="column">
+									<ul>
+										<li class="parent">
+											<div class="submenu">
+												<ul>
+													<li>
+														<a href="wallet-transaction.html">Transactions</a>
+													</li>
+													<li>
+														<a href="wallet-bank-transfer.html">Bank Transfer Requests</a>
+													</li>
+													<li>
+														<a href="wallet-configuration.html">Configuration</a>
+													</li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</li>
+								
+							</ul>
+						</div>
+					</li>
+					<li class="item-notifications  level-0">
+						<a href="#" class="disabled">Notifications</a>
+						<div class="submenu">
+							<strong class="submenu-title">Notifications</strong>
+							<a href="#" class="action-close disabled"></a>
+							<ul class="submenu">
+								<li class="column">
+									<ul>
+										<li class="parent">
+											<div class="submenu">
+												<ul>
+													<li>
+														<a href="#">New Products Added</a>
+													</li>
+													<li>
+														<a href="#">New Products Added by SKU</a>
+													</li>
+													<li>
+														<a href="#">Discontinued Products</a>
+													</li>
+													<li>
+														<a href="#">Discontinued Products by SKU</a>
+													</li>
+													<li>
+														<a href="#">Inventory Level Update</a>
+													</li>
+													<li>
+														<a href="#">Inventory Level Update by SKU</a>
+													</li>
+													<li>
+														<a href="#">Updated Images</a>
+													</li>
+													<li>
+														<a href="#">Updated Images by SKU</a>
+													</li>
+													<li>
+														<a href="#">Updated Price</a>
+													</li>
+													<li>
+														<a href="#">Updated Price by SKU</a>
+													</li>
+													<li>
+														<a href="#">Update Description</a>
+													</li>
+													<li>
+														<a href="#">Update Description by SKU</a>
+													</li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="item-marketplace  level-0">
+						<a href="#" class="disabled">Marketplace</a>
+					</li>
+					<li class="item-stores  level-0">
+						<a href="#" class="disabled">Stores</a>
+					</li>
+					<li class="item-system  level-0">
+						<a href="#" class="disabled">System</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<!-- End Menu Bar -->
+		<div class="page-wrapper">
+			<main class="page-content">
+				<div class="page-sales-orders">
+					<div class="page-header row">
+						<div class="page-header-hgroup col-sm-6">
+							<div class="page-title-wrapper">
+								<h1 class="page-title">Custom Fields</h1>
+							</div>
+						</div>
+						<div class="page-header-actions col-sm-6">
+							<div class="admin-user">
+					            <a href="#" class="admin__action-dropdown disabled" title="My Account">
+				                    <span class="admin-user-account-text">admin user</span>
+					            </a>
+					            <ul class="admin__action-dropdown-menu">
+	                                <li>
+					                    <a href="#">
+					                        Account Setting (<span class="admin-user-name">Admin User</span>)
+					                    </a>
+					                </li>
+	                                <li>
+					                    <a href="#" title="Customer View" target="_blank" class="store-front">
+					                        Customer View
+					                    </a>
+					                </li>
+					                <li>
+					                    <a href="#" class="account-signout" title="Sign Out">
+					                        Sign Out
+					                    </a>
+					                </li>
+					            </ul>
+					        </div>
+							<div class="notifications-wrapper">
+					            <a href="#" title="Notifications" class="disabled">
+						            <span class="notifications-counter">
+						                9
+						            </span>
+						        </a>
+						        <ul class="admin__action-dropdown-menu">
+	                                <li class="notifications-entry" data-notification-id="374" data-notification-severity="">
+	                                    <strong class="notifications-entry-title">
+					                        Your export file is ready                    
+					                    </strong>
+	                                    <p class="notifications-entry-description">
+				                            You can pick up your file at export main page                        
+				                        </p>
+	                                    <time class="notifications-entry-time">
+					                        Jul 9, 2021, 10:05:17 PM                    
+					                    </time>
+					                    <button type="button" class="notifications-close" title="Close"></button>
+					                </li>
+	                                <li class="notifications-entry" data-notification-id="373" data-notification-severity="">
+	                                    <strong class="notifications-entry-title">
+					                        Your export file is ready                    
+					                    </strong>                 
+	                                    <p class="notifications-entry-description">
+				                            You can pick up your file at export main page                        
+				                        </p>
+	                                    <time class="notifications-entry-time">
+					                        Jul 9, 2021, 8:51:02 PM                    
+					                    </time>
+					                    <button type="button" class="notifications-close" title="Close"></button>
+					                </li>
+	                                <li class="notifications-entry" data-notification-id="372" data-notification-severity="">
+	                                    <strong class="notifications-entry-title">
+					                        Your export file is ready                    
+					                    </strong>
+	                                	<p class="notifications-entry-description">
+				                            You can pick up your file at export main page                        
+				                        </p>
+	                                    <time class="notifications-entry-time">
+					                        Jul 9, 2021, 5:33:04 AM                    
+					                    </time>
+					                    <button type="button" class="notifications-close" title="Close"></button>
+					                </li>
+			                        <li class="notifications-entry notifications-entry-last">
+						                <a href="#" class="action-tertiary action-more">
+						                    See All (<span class="notifications-counter">9</span> unread)                
+						                </a>
+						            </li>
+						        </ul>
+						    </div>
+							<div class="search-global">
+							    <form action="#" id="form-search">
+							        <div class="search-global-field">
+							            <label class="search-global-label" for="search-global"></label>
+							            <input class="search-global-input" type="text" name="query" value="">
+		                                <button type="submit" class="search-global-action" title="Search"></button>
+							        </div>
+							    </form>
+							</div>
+						</div>
+					</div>
+					<div class="page-main-actions">    
+						<div class="page-actions">
+							<div class="page-actions-inner">
+								<div class="page-actions-buttons">
+				        			<button type="button" class="action- scalable primary" onclick="location.href = 'rma-add-field.html';">
+									    <span>Add Custom Field</span>
+									</button>
+				    			</div>
+				    		</div>
+				    	</div>
+					</div>
+					<div class="page-main-container">
+						<div class="admin__data-grid-header">
+							<div class="admin-data-grid-actions">
+								<div class="admin-dropdown view">
+									<button class="admin__action-dropdown" type="button">
+        								<span>
+        									Default View
+        								</span>
+   	 								</button>
+   	 								<ul class="admin-dropdown-menu">
+        								<li>								
+										    <a href="" class="action-dropdown-menu-link">Default View</a> 
+										</li>
+									</ul>
+								</div>
+								<div class="admin-dropdown columns">
+									<button class="admin__action-dropdown" type="button">
+        								<span>
+        									Columns
+        								</span>
+   	 								</button>
+   	 								<div class="admin-dropdown-menu">
+        								<div class="admin__action-dropdown-menu-header">6 out of 6 visible</div>
+        								<div class="admin__action-dropdown-menu-content">
+								        	<div class="admin__field-option">
+								                <input type="checkbox"  id="2">
+								                <label>ID</label>
+								            </div>
+								            <div class="admin__field-option">
+								                <input type="checkbox"  id="3">
+								                <label>Name</label>
+								            </div>
+								            <div class="admin__field-option">
+								                <input type="checkbox"  id="4">
+								                <label>Enable</label>
+								            </div>
+								            <div class="admin__field-option">
+								                <input type="checkbox"  id="5">
+								                <label>Field Type</label>
+								            </div>
+								            <div class="admin__field-option">
+								                <input type="checkbox"  id="6">
+								                <label>Refers To</label>
+								            </div>
+								            <div class="admin__field-option">
+								                <input type="checkbox"  id="7">
+								                <label>Websites</label>
+								            </div>
+								        </div>
+								        <div class="admin__action-dropdown-menu-footer">
+								            <div class="admin__action-dropdown-footer-secondary-actions">
+								                <button class="action-tertiary" type="button">Reset</button>
+								            </div>
+								            <div class="admin__action-dropdown-footer-main-actions">
+								                <button class="action-tertiary" type="button">Cancel</button>
+								            </div>
+								        </div>
+									</div>
+								</div>
+								
+							</div>
+							
+							<div class="data-grid-filters-actions-wrap">
+								<div class="admin-filter-dropdown export">
+									<button class="admin__action-dropdown" type="button">
+        								<span>
+        									Filters
+        								</span>
+   	 								</button>
+								</div>
+							</div>
+							<div class="admin__data-grid-filters-wrap">
+								<fieldset class="admin__fieldset">
+									<fieldset class="form-field">
+										<legend class="form-field-legend">
+										    <span>ID</span>
+										</legend>
+										<div class="form-field form-field1">
+											<label class="label">
+											    <span>from</span>
+											</label>
+											<div class="control">
+												<input type="text">
+											</div>
+										</div>
+										<div class="form-field form-field1">
+											<label class="label">
+											    <span>to</span>
+											</label>
+											<div class="control">
+												<input type="text">
+											</div>
+										</div>
+									</fieldset>
+									<fieldset class="form-field">
+										<legend class="form-field-legend">
+										    <span>Name</span>
+										</legend>
+										<div class="form-field">
+											<div class="control">
+												<input type="text" name="">
+											</div>
+										</div>
+									</fieldset>
+									<fieldset class="form-field">
+										<legend class="form-field-legend">
+										    <span>Enabled</span>
+										</legend>
+										<div class="form-field">
+											<div class="control">
+												<select class="admin__control-select">
+													<option value="">Select...</option>
+													<option>Yes</option>
+													<option>No</option>
+												</select>
+											</div>
+										</div>
+									</fieldset>
+									<fieldset class="form-field">
+										<legend class="form-field-legend">
+										    <span>Field Type</span>
+										</legend>
+										<div class="form-field">
+											<div class="control">
+												<select class="admin__control-select">
+													<option value="">Select...</option>
+													<option>Text Field</option>
+													<option>Text Area</option>
+													<option>Dropdown</option>
+													<option>Multiselect</option>
+												</select>
+											</div>
+										</div>
+									</fieldset>
+									<fieldset class="form-field">
+										<legend class="form-field-legend">
+										    <span>Refers To</span>
+										</legend>
+										<div class="form-field">
+											<div class="control">
+												<select class="admin__control-select">
+													<option value="">Select...</option>
+													<option>Request</option>
+													<option>Product</option>
+												</select>
+											</div>
+										</div>
+									</fieldset>
+									<fieldset class="form-field">
+										<legend class="form-field-legend">
+										    <span>Websites</span>
+										</legend>
+										<div class="form-field">
+											<div class="control">
+												<select class="admin__control-select">
+													<option value="">Select...</option>
+													<option>Idropship</option>
+												</select>
+											</div>
+										</div>
+									</fieldset>
+								</fieldset>
+								<div class="admin__data-grid-filters-footer">
+							        <div class="admin__footer-main-actions">
+							            <button class="action-tertiary" type="button">
+							                <span>Cancel</span>
+							            </button>
+							            <button class="action-secondary" type="button">
+							                <span>Apply Filters</span>
+							            </button>
+							        </div>
+							    </div>
+							</div>
+						</div>
+						<div class="admin-pager-action row">
+							<div class="col-xs-12 col-sm-12">
+					            <div class="row">
+					                <div class="col-xs-3 col-sm-3">
+										<div class="admin__control-support-text">
+					    					59<span> records found</span>
+										</div>
+									</div>
+					                <div class="col-xs-9 col-sm-9">
+										<div class="admin__data-grid-pager-wrap">
+											<div class="selectmenu" data-bind="collapsible">
+											    <div class="selectmenu-items">
+											        <select>
+											            <option>20</option>
+											            <option>30</option>
+											            <option>50</option>
+											            <option>100</option>
+											        </select>
+											    </div>
+											</div>
+											<label class="admin__control-support-text">per page</label>
+										    <div class="admin__data-grid-pager">
+										        <button class="action-previous" type="button" disabled=""></button>
+										        <input class="admin__control-text" type="number" value="1">
+										        <label class="admin__control-support-text">of 2713</label>
+										        <button class="action-next" type="button"></button>
+										    </div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="admin__data-grid-wrap">
+							<table class="data-grid data-grid-draggable">
+								<thead>
+									<tr>
+										<th class="data-grid-multicheck-cell">
+											<div class="action-multicheck-wrap">
+												<input class="admin__control-checkbox" type="checkbox" id="select-all" name="select all">
+												<button class="action-multicheck-toggle"><span>Options</span></button>
+												<ul class="action-menu" for="select-all">
+										            <li>
+										                <span class="action-menu-item">Select All</span>
+										            </li>
+										            <li style="display: none;">
+										                <span class="action-menu-item">Deselect All</span>
+										            </li>
+										            <li>
+										                <span class="action-menu-item">Select All on This Page</span>
+										            </li>
+										            <li style="display: none;">
+										                <span class="action-menu-item">Deselect All on This Page</span>
+										            </li>
+										        </ul>
+											</div>
+										</th>
+										<th class="data-grid-th  _sortable _descend">
+											<span class="data-grid-cell-content">ID</span>
+										</th>
+										<th class="data-grid-th">
+											<span class="data-grid-cell-content">Name</span>
+										</th>
+										<th class="data-grid-th ">
+											<span class="data-grid-cell-content">Enabled</span>
+										</th>
+										<th class="data-grid-th ">
+											<span class="data-grid-cell-content">Field Type</span>
+										</th>
+										<th class="data-grid-th">
+											<span class="data-grid-cell-content ">Refers To</span>
+										</th>
+										<th class="data-grid-th">
+											<span class="data-grid-cell-content">Websites</span>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="data-row">
+										<td class="data-grid-checkbox-cell">
+										    <input class="admin__control-checkbox" type="checkbox">
+										</td>
+										<td>
+											<div class="data-grid-cell-content">1</div>
+										</td>
+										<td class="data-grid-actions-cell">
+											<a class="action-menu-item" href="#">Resolution</a>
+										</td>
+										<td>
+											<div class="data-grid-cell-content">Yes</div>
+										</td>
+										<td>
+											<div class="data-grid-cell-content">Dropdown</div>
+										</td>
+										<td>
+											<div class="data-grid-cell-content">Request</div>
+										</td>
+										<td class="data-grid-actions-cell">
+											<div class="data-grid-cell-content">Idropship</div>
+										</td>
+						            </tr>
+						            <tr class="data-row">
+										<td class="data-grid-checkbox-cell">
+										    <input class="admin__control-checkbox" type="checkbox">
+										</td>
+										<td>
+											<div class="data-grid-cell-content">2</div>
+										</td>
+										<td class="data-grid-actions-cell">
+											<a class="action-menu-item" href="#">Package Condition</a>
+										</td>
+										<td>
+											<div class="data-grid-cell-content">Yes</div>
+										</td>
+										<td>
+											<div class="data-grid-cell-content">Dropdown</div>
+										</td>
+										<td>
+											<div class="data-grid-cell-content">Request</div>
+										</td>
+										<td class="data-grid-actions-cell">
+											<div class="data-grid-cell-content">Idropship</div>
+										</td>
+						            </tr>
+						            <tr class="data-row">
+										<td class="data-grid-checkbox-cell">
+										    <input class="admin__control-checkbox" type="checkbox">
+										</td>
+										<td>
+											<div class="data-grid-cell-content">3</div>
+										</td>
+										<td class="data-grid-actions-cell">
+											<a class="action-menu-item" href="#">Reason</a>
+										</td>
+										<td>
+											<div class="data-grid-cell-content">Yes</div>
+										</td>
+										<td>
+											<div class="data-grid-cell-content">Dropdown</div>
+										</td>
+										<td>
+											<div class="data-grid-cell-content">Product</div>
+										</td>
+										<td class="data-grid-actions-cell">
+											<div class="data-grid-cell-content">Idropship</div>
+										</td>
+						            </tr>
+						            <tr class="data-row">
+										<td class="data-grid-checkbox-cell">
+										    <input class="admin__control-checkbox" type="checkbox">
+										</td>
+										<td>
+											<div class="data-grid-cell-content">4</div>
+										</td>
+										<td class="data-grid-actions-cell">
+											<a class="action-menu-item" href="#">Replacement</a>
+										</td>
+										<td>
+											<div class="data-grid-cell-content">No</div>
+										</td>
+										<td>
+											<div class="data-grid-cell-content">Dropdown</div>
+										</td>
+										<td>
+											<div class="data-grid-cell-content">Request</div>
+										</td>
+										<td class="data-grid-actions-cell">
+											<div class="data-grid-cell-content">Idropship</div>
+										</td>
+						            </tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+		</main>
+	</div>
+
+
+
+
+
+		<!-- Popup if error -->  
+
+		<div class="modals-wrapper">
+			<aside role="dialog" class="modal-popup" style="z-index: 902;">
+			    <div class="modal-inner-wrap">
+			        <header class="modal-header">
+            			<h1 id="modal-title-13" class="modal-title">
+                    		Attention
+			            </h1>
+			            <button class="action-close" data-role="closeBtn" type="button">
+			                <span>Close</span>
+			            </button>
+			        </header>
+			        <div class="modal-content"><div>You haven't selected any items!</div></div>
+			        <footer class="modal-footer">
+			            <button class="action-primary action-accept" type="button" data-role="action"><span>OK</span></button>
+			        </footer>
+			    </div>
+			</aside>
+			<div class="modals-overlay" style="z-index: 901;"></div>
+		</div>
+	</body>
+<script type="text/javascript" src="js/custom.js"></script>
+</html>

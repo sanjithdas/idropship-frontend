@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+        <meta charset="utf-8">
+       	<title>Dashboard</title>
+       	<link href="css/reset.css" media="screen" rel="stylesheet">
+       	<link href="css/font-awesome.min.css" media="screen" rel="stylesheet">
+       	<link href="css/bootstrap.css" media="screen" rel="stylesheet">
+      	<link href="css/styles.css" media="screen" rel="stylesheet">
+      	<link href="css/responsive.css" media="screen" rel="stylesheet">
+      	<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<!-- Menu bar -->
+		<div class="menu-wrapper _fixed">
+			<nav class="admin__menu">
+				<ul id="nav">
+					<li class="item-dashboard active level-0">
+						<a href="dashboard.html">Dashboard</a>
+					</li>
+					<li class="item-sales level-0">
+						<a href="#" class="disabled">Sales</a>
+
+						<div class="submenu" id="sub">
+							<strong class="submenu-title">Sales</strong>
+							<a href="#" class="action-close disabled"></a>
+							<ul class="submenu">
+								<li class="column">
+									<ul>
+										<li class="parent">
+											<strong class="submenu-group-title">Operations</strong>
+											<div class="submenu">
+												<ul>
+													<li>
+														<a href="sales-order.html">Orders</a>
+													</li>
+													<li>
+														<a href="sales-batch-order-payments.html">Batch Order Payments</a>
+													</li>
+													<li>
+														<a href="sales-invoice.html">Invoices</a>
+													</li>
+													<li>
+														<a href="sales-shipments.html">Shipments</a>
+													</li>
+													<li>
+														<a href="sale-credit-memos.html">Credit Memos</a>
+													</li>
+													<li>
+														<a href="sales-transactions.html">Transactions</a>
+													</li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</li>
+								<li class="column">
+									<ul>
+										<li  class="parent">
+											<strong class="submenu-group-title">RMA by Aheadworks</strong>
+											<div class="submenu">
+												<ul>
+													<li>
+														<a href="rma-manage.html">Manage RMA</a>
+													</li>
+													<li>
+														<a href="rma-status.html">Statuses and Email Templates</a>
+													</li>
+													<li>
+														<a href="rma-custom-field.html">Custom Fields</a>
+													</li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="item-catalogue  level-0">
+						<a href="#"  class="disabled">Catalogue</a>
+						<div class="submenu">
+							<strong class="submenu-title">Catalogue</strong>
+							<a href="#" class="action-close disabled"></a>
+							<ul class="submenu">
+								<li class="column">
+									<ul>
+										<li class="parent">
+											<strong class="submenu-group-title">Inventory</strong>
+											<div class="submenu">
+												<ul>
+													<li>
+														<a href="catalog.html">Products</a>
+													</li>
+													<li>
+														<a href="category.html">Categories</a>
+													</li>
+													
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</li>
+								
+							</ul>
+						</div>
+					</li>
+					<li class="item-customers  level-0">
+						<a href="#"  class="disabled">Customers</a>
+						<div class="submenu">
+							<strong class="submenu-title">Customers</strong>
+							<a href="#" class="action-close disabled"></a>
+							<ul class="submenu">
+								<li class="column">
+									<ul>
+										<li class="parent">
+											<div class="submenu">
+												<ul>
+													<li>
+														<a href="customer-all.html">All Customers</a>
+													</li>
+													<li>
+														<a href="customer-online.html">Now Online</a>
+													</li>
+													<li>
+														<a href="customer-group.html">Customer Groups</a>
+													</li>
+													<li>
+														<a href="customer-notification.html">Notifications</a>
+													</li>
+
+												</ul>
+											</div>
+										</li>
+										<li class="parent">
+											<strong class="submenu-group-title">Help Desk</strong>
+											<div class="submenu">
+												<ul>
+													<li>
+														<a href="helpdesk-tickets.html">Tickets</a>
+													</li>
+													<li>
+														<a href="helpdesk-automations.html">Automations</a>
+													</li>
+													<li>
+														<a href="helpdesk-departments.html">Departments</a>
+													</li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</li>
+								
+							</ul>
+						</div>
+					</li>
+					<li class="item-marketing  level-0">
+						<a href="#" class="disabled">Marketing</a>
+						<div class="submenu">
+							<strong class="submenu-title">Marketing</strong>
+							<a href="#" class="action-close disabled"></a>
+							<ul class="submenu">
+								<li class="column">
+									<ul>
+										<li class="parent">
+											<strong class="submenu-group-title">Promotions</strong>
+											<div class="submenu">
+												<ul>
+													<li>
+														<a href="price-rules.html">Cart Price Rules</a>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li class="parent">
+											<strong class="submenu-group-title">Communications</strong>
+											<div class="submenu">
+												<ul>
+													<li>
+														<a href="email-template.html">Email Templates</a>
+													</li>
+													<li>
+														<a href="newsletter-template.html">Newsletter Template</a>
+													</li>
+													<li>
+														<a href="newsletter-queue.html">Newsletter Queue</a>
+													</li>
+													<li>
+														<a href="newsletter-subscriber.html">Newsletter Subscribers</a>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li class="parent">
+											<strong class="submenu-group-title">Advertising Channels</strong>
+											<div class="submenu">
+												<ul>
+													<li>
+														<a href="google-shopping-ads.html">Google Shopping ads</a>
+													</li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</li>
+								<li class="column">
+									<ul>
+										<li class="parent">
+											<strong class="submenu-group-title">SEO & Search</strong>
+											<div class="submenu">
+												<ul>
+													<li>
+														<a href="url-rewrites.html">URL Rewrites</a>
+													</li>
+													<li>
+														<a href="search-tearms.html">Search Tearms</a>
+													</li>
+													<li>
+														<a href="search-synonyms.html">Search Synonyms</a>
+													</li>
+													<li>
+														<a href="sitemap.html">Site Map</a>
+													</li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="item-wallet  level-0">
+						<a href="#" class="disabled">Wallet</a>
+						<div class="submenu">
+							<strong class="submenu-title">Wallet</strong>
+							<a href="#" class="action-close disabled"></a>
+							<ul class="submenu">
+								<li class="column">
+									<ul>
+										<li class="parent">
+											<div class="submenu">
+												<ul>
+													<li>
+														<a href="wallet-transaction.html">Transactions</a>
+													</li>
+													<li>
+														<a href="wallet-bank-transfer.html">Bank Transfer Requests</a>
+													</li>
+													<li>
+														<a href="wallet-configuration.html">Configuration</a>
+													</li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</li>
+								
+							</ul>
+						</div>
+					</li>
+					<li class="item-notifications  level-0">
+						<a href="#" class="disabled">Notifications</a>
+						<div class="submenu">
+							<strong class="submenu-title">Notifications</strong>
+							<a href="#" class="action-close disabled"></a>
+							<ul class="submenu">
+								<li class="column">
+									<ul>
+										<li class="parent">
+											<div class="submenu">
+												<ul>
+													<li>
+														<a href="#">New Products Added</a>
+													</li>
+													<li>
+														<a href="#">New Products Added by SKU</a>
+													</li>
+													<li>
+														<a href="#">Discontinued Products</a>
+													</li>
+													<li>
+														<a href="#">Discontinued Products by SKU</a>
+													</li>
+													<li>
+														<a href="#">Inventory Level Update</a>
+													</li>
+													<li>
+														<a href="#">Inventory Level Update by SKU</a>
+													</li>
+													<li>
+														<a href="#">Updated Images</a>
+													</li>
+													<li>
+														<a href="#">Updated Images by SKU</a>
+													</li>
+													<li>
+														<a href="#">Updated Price</a>
+													</li>
+													<li>
+														<a href="#">Updated Price by SKU</a>
+													</li>
+													<li>
+														<a href="#">Update Description</a>
+													</li>
+													<li>
+														<a href="#">Update Description by SKU</a>
+													</li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="item-marketplace  level-0">
+						<a href="#" class="disabled">Marketplace</a>
+					</li>
+					<li class="item-stores  level-0">
+						<a href="#" class="disabled">Stores</a>
+					</li>
+					<li class="item-system  level-0">
+						<a href="#" class="disabled">System</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<!-- End Menu Bar -->
+		<div class="page-wrapper">
+			<main class="page-content container">
+				<div class="page-columns">
+					<div class="col-top">
+						<div class="row">
+							<div class="col-sm-12 col-md-4 col-lg-3">
+								<div class="stock-summary">
+									<h3>Stock Summary</h3>
+									<div class="list-value">
+										<ul>
+											<li class="stock">
+												<span>In Stock</span><span class="value">1571</span>
+											</li>
+											<li class="out-stock">
+												<span>Out of Stock</span><span class="value">564</span>
+											</li>
+											<li class="low-stock">
+												<span>Low Stock</span><span class="value">11</span>
+											</li>
+											<li class="outdated">
+												<span>Outdated info</span><span class="value">0</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-12 col-md-8 col-lg-9 b-skills">
+								<div class="row">
+									<div class="col-xs-6 col-sm-4 col-md-4 col-lg-2">
+										<div class="skill-item center-block" id="chartpie">
+											<div class="chart-container">
+												<div class="chart " data-percent="5" data-bar-color="#27ae60">
+													<span class="percent" data-after="%">5</span>
+													<canvas height="250" width="250"></canvas>
+												</div>
+											</div>
+											<p>Pending Orders</p>
+										</div>
+									</div>
+									<div class="col-xs-6 col-sm-4 col-md-4 col-lg-2">
+										<div class="skill-item center-block">
+											<div class="chart-container">
+												<div class="chart " data-percent="10" data-bar-color="#27ae60">
+													<span class="percent" data-after="%">10</span>
+												<canvas height="250" width="250"></canvas></div>
+											</div>
+											<p>On Hold Orders</p>
+										</div>
+									</div>
+									<div class="col-xs-6 col-sm-4 col-md-4 col-lg-2">
+										<div class="skill-item center-block">
+											<div class="chart-container">
+												<div class="chart " data-percent="84" data-bar-color="#27ae60">
+													<span class="percent" data-after="%">84</span>
+												<canvas height="250" width="250"></canvas></div>
+											</div>
+											<p>Not Submitted Orders</p>
+										</div>
+									</div>
+									<div class="col-xs-6 col-sm-4 col-md-4 col-lg-2">
+										<div class="skill-item center-block">
+											<div class="chart-container">
+												<div class="chart " data-percent="1" data-bar-color="#27ae60">
+													<span class="percent" data-after="%">1</span>
+												<canvas height="250" width="250"></canvas></div>
+											</div>
+											<p>Processed Orders</p>
+										</div>
+									</div>
+									<div class="col-xs-6 col-sm-4 col-md-4 col-lg-2">
+										<div class="skill-item center-block">
+											<div class="chart-container">
+												<div class="chart " data-percent="1" data-bar-color="#27ae60">
+													<span class="percent" data-after="%">1</span>
+												<canvas height="250" width="250"></canvas></div>
+											</div>
+											<p>Dispatched Orders</p>
+										</div>
+									</div>
+									<div class="col-xs-6 col-sm-4 col-md-4 col-lg-2">
+										<div class="skill-item center-block">
+											<div class="chart-container">
+												<div class="chart " data-percent="0" data-bar-color="#27ae60">
+													<span class="percent" data-after="%">0</span>
+												<canvas height="250" width="250"></canvas></div>
+											</div>
+											<p>Cancelled</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-content">
+						<div class="row">
+							<div class="col-lg-5 col-md-6 col-sm-12">
+								<div class="fillter-sale">
+									<div class="control">
+										<label>Date range:</label>
+										<div class="control-form">
+											<i class="fa fa-calendar" aria-hidden="true"></i>
+											<select>
+												<option>Last 7 days</option>
+												<option>Last Month</option>
+												<option>This Year</option>
+											</select>
+										</div>
+									</div>
+									
+									<div class="table">
+										<table>
+											<caption>Sales</caption>
+											<thead>
+												<tr>
+													<th>Orders</th>
+													<th>Amount</th>
+													<th>Average Order Value</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>86</td>
+													<td>$0.00</td>
+													<td>0.00</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+
+								<div class="top-sold">
+									<div class="table">
+										<table>
+											<caption>Top 5 sold products</caption>
+											<thead>
+												<tr>
+													<th>Product name</th>
+													<th>Price (excl VAT)</th>
+													<th>Total Sales on this</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>S006508086</td>
+													<td>$0.00</td>
+													<td>NaN%</td>
+												</tr>
+												<tr>
+													<td>S006508086</td>
+													<td>$0.00</td>
+													<td>NaN%</td>
+												</tr>
+												<tr>
+													<td>S006508086</td>
+													<td>$0.00</td>
+													<td>NaN%</td>
+												</tr>
+												<tr>
+													<td>S006508086</td>
+													<td>$0.00</td>
+													<td>NaN%</td>
+												</tr>
+												<tr>
+													<td>S006508086</td>
+													<td>$0.00</td>
+													<td>NaN%</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-5 col-md-6 col-sm-12">
+								<canvas id="myChart" width="400" height="200"></canvas>
+							</div>
+							
+
+
+						</div>
+					</div>
+					
+				</div>
+			</main>
+		</div>
+	
+
+<!-- Chart 2 -->
+<script type="text/javascript" src="js/chart.min.js"></script>
+<script>
+	var ctx = document.getElementById('myChart').getContext('2d');
+	var myChart = new Chart(ctx, {
+	    type: 'bar',
+	    data: {
+	        labels: ['13', '14', '15', '16', '17', '18', '19'],
+	        datasets: [{
+	            label: '# of Votes',
+	            data: [12, 19, 3, 5, 2, 3, 20],
+	            backgroundColor: [
+	                'rgba(255, 99, 132, 1)'
+	            ],
+	            borderWidth: 1
+	        }]
+	    },
+	    options: {
+	        scales: {
+	            y: {
+	                beginAtZero: true
+	            }
+	        }
+	    }
+	});
+	function run()
+	{
+		var fName = arguments[0],
+			aArgs = Array.prototype.slice.call(arguments, 1);
+		try {
+			fName.apply(window, aArgs);
+		} catch(err) {
+		}
+	};
+</script>
+
+<!-- /* chart pie -->
+<script src="js/jquery.min.js"></script>
+<script src="chart/jquery.appear.min.js"></script>
+<script src="chart/jquery.easypiechart.min.js"></script>
+<!-- /*================================================== */ -->
+<script>
+    'use strict';
+
+var $window = $(window);
+
+function run()
+{
+	var fName = arguments[0],
+		aArgs = Array.prototype.slice.call(arguments, 1);
+	try {
+		fName.apply(window, aArgs);
+	} catch(err) {
+		 
+	}
+};
+ 
+/* chart
+================================================== */
+function _chart ()
+{
+	$('.b-skills').appear(function() {
+		setTimeout(function() {
+			$('.chart').easyPieChart({
+				easing: 'easeOutElastic',
+				delay: 3000,
+				barColor: '#369670',
+				trackColor: '#ddd',
+				scaleColor: false,
+				lineWidth: 15,
+				trackWidth: 15,
+				size: 200,
+				lineCap: 'round',
+				onStep: function(from, to, percent) {
+					this.el.children[0].innerHTML = Math.round(percent);
+				}
+			});
+		}, 0);
+	});
+};
+ 
+
+$(document).ready(function() {
+	run(_chart);
+}); 
+</script>
+<script src="js/custom.js"></script>
+
+	</body>
+
+</html>

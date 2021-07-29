@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+        <meta charset="utf-8">
+       	<title>Manage RMA</title>
+       	<link href="css/reset.css" media="screen" rel="stylesheet">
+       	<link href="css/font-awesome.min.css" media="screen" rel="stylesheet">
+       	<link href="css/bootstrap.css" media="screen" rel="stylesheet">
+      	<link href="css/styles.css" media="screen" rel="stylesheet">
+      	<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+
+	</head>
+	<body>
+		<!-- Menu bar -->
+		<div class="menu-wrapper _fixed">
+			<nav class="admin__menu">
+				<ul id="nav">
+					<li class="item-dashboard level-0">
+						<a href="dashboard.html">Dashboard</a>
+					</li>
+					<li class="item-sales current level-0">
+						<a href="#" class="disabled">Sales</a>
+						<div class="submenu">
+							<strong class="submenu-title">Sales</strong>
+							<a href="#" class="action-close disabled"></a>
+							<ul class="submenu">
+								<li class="column">
+									<ul>
+										<li class="parent">
+											<strong class="submenu-group-title">Operations</strong>
+											<div class="submenu">
+												<ul>
+													<li>
+														<a href="sales-order.html">Orders</a>
+													</li>
+													<li>
+														<a href="sales-batch-order-payments.html">Batch Order Payments</a>
+													</li>
+													<li>
+														<a href="sales-invoice.html">Invoices</a>
+													</li>
+													<li>
+														<a href="sales-shipments.html">Shipments</a>
+													</li>
+													<li>
+														<a href="sale-credit-memos.html">Credit Memos</a>
+													</li>
+													<li>
+														<a href="sales-transactions.html">Transactions</a>
+													</li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</li>
+								<li class="column">
+									<ul>
+										<li  class="parent">
+											<strong class="submenu-group-title">RMA by Aheadworks</strong>
+											<div class="submenu">
+												<ul>
+													<li>
+														<a href="rma-manage.html">Manage RMA</a>
+													</li>
+													<li>
+														<a href="rma-status.html">Statuses and Email Templates</a>
+													</li>
+													<li>
+														<a href="rma-custom-field.html">Custom Fields</a>
+													</li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="item-catalogue  level-0">
+						<a href="#"  class="disabled">Catalogue</a>
+						<div class="submenu">
+							<strong class="submenu-title">Catalogue</strong>
+							<a href="#" class="action-close disabled"></a>
+							<ul class="submenu">
+								<li class="column">
+									<ul>
+										<li class="parent">
+											<strong class="submenu-group-title">Inventory</strong>
+											<div class="submenu">
+												<ul>
+													<li>
+														<a href="catalog.html">Products</a>
+													</li>
+													<li>
+														<a href="category.html">Categories</a>
+													</li>
+													
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</li>
+								
+							</ul>
+						</div>
+					</li>
+					<li class="item-customers  level-0">
+						<a href="#"  class="disabled">Customers</a>
+						<div class="submenu">
+							<strong class="submenu-title">Customers</strong>
+							<a href="#" class="action-close disabled"></a>
+							<ul class="submenu">
+								<li class="column">
+									<ul>
+										<li class="parent">
+											<div class="submenu">
+												<ul>
+													<li>
+														<a href="customer-all.html">All Customers</a>
+													</li>
+													<li>
+														<a href="customer-online.html">Now Online</a>
+													</li>
+													<li>
+														<a href="customer-group.html">Customer Groups</a>
+													</li>
+													<li>
+														<a href="customer-notification.html">Notifications</a>
+													</li>
+
+												</ul>
+											</div>
+										</li>
+										<li class="parent">
+											<strong class="submenu-group-title">Help Desk</strong>
+											<div class="submenu">
+												<ul>
+													<li>
+														<a href="helpdesk-tickets.html">Tickets</a>
+													</li>
+													<li>
+														<a href="helpdesk-automations.html">Automations</a>
+													</li>
+													<li>
+														<a href="helpdesk-departments.html">Departments</a>
+													</li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</li>
+								
+							</ul>
+						</div>
+					</li>
+					<li class="item-marketing  level-0">
+						<a href="#" class="disabled">Marketing</a>
+						<div class="submenu">
+							<strong class="submenu-title">Marketing</strong>
+							<a href="#" class="action-close disabled"></a>
+							<ul class="submenu">
+								<li class="column">
+									<ul>
+										<li class="parent">
+											<strong class="submenu-group-title">Promotions</strong>
+											<div class="submenu">
+												<ul>
+													<li>
+														<a href="price-rules.html">Cart Price Rules</a>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li class="parent">
+											<strong class="submenu-group-title">Communications</strong>
+											<div class="submenu">
+												<ul>
+													<li>
+														<a href="email-template.html">Email Templates</a>
+													</li>
+													<li>
+														<a href="newsletter-template.html">Newsletter Template</a>
+													</li>
+													<li>
+														<a href="newsletter-queue.html">Newsletter Queue</a>
+													</li>
+													<li>
+														<a href="newsletter-subscriber.html">Newsletter Subscribers</a>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li class="parent">
+											<strong class="submenu-group-title">Advertising Channels</strong>
+											<div class="submenu">
+												<ul>
+													<li>
+														<a href="google-shopping-ads.html">Google Shopping ads</a>
+													</li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</li>
+								<li class="column">
+									<ul>
+										<li class="parent">
+											<strong class="submenu-group-title">SEO & Search</strong>
+											<div class="submenu">
+												<ul>
+													<li>
+														<a href="url-rewrites.html">URL Rewrites</a>
+													</li>
+													<li>
+														<a href="search-tearms.html">Search Tearms</a>
+													</li>
+													<li>
+														<a href="search-synonyms.html">Search Synonyms</a>
+													</li>
+													<li>
+														<a href="sitemap.html">Site Map</a>
+													</li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="item-wallet  level-0">
+						<a href="#" class="disabled">Wallet</a>
+						<div class="submenu">
+							<strong class="submenu-title">Wallet</strong>
+							<a href="#" class="action-close disabled"></a>
+							<ul class="submenu">
+								<li class="column">
+									<ul>
+										<li class="parent">
+											<div class="submenu">
+												<ul>
+													<li>
+														<a href="wallet-transaction.html">Transactions</a>
+													</li>
+													<li>
+														<a href="wallet-bank-transfer.html">Bank Transfer Requests</a>
+													</li>
+													<li>
+														<a href="wallet-configuration.html">Configuration</a>
+													</li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</li>
+								
+							</ul>
+						</div>
+					</li>
+					<li class="item-notifications  level-0">
+						<a href="#" class="disabled">Notifications</a>
+						<div class="submenu">
+							<strong class="submenu-title">Notifications</strong>
+							<a href="#" class="action-close disabled"></a>
+							<ul class="submenu">
+								<li class="column">
+									<ul>
+										<li class="parent">
+											<div class="submenu">
+												<ul>
+													<li>
+														<a href="#">New Products Added</a>
+													</li>
+													<li>
+														<a href="#">New Products Added by SKU</a>
+													</li>
+													<li>
+														<a href="#">Discontinued Products</a>
+													</li>
+													<li>
+														<a href="#">Discontinued Products by SKU</a>
+													</li>
+													<li>
+														<a href="#">Inventory Level Update</a>
+													</li>
+													<li>
+														<a href="#">Inventory Level Update by SKU</a>
+													</li>
+													<li>
+														<a href="#">Updated Images</a>
+													</li>
+													<li>
+														<a href="#">Updated Images by SKU</a>
+													</li>
+													<li>
+														<a href="#">Updated Price</a>
+													</li>
+													<li>
+														<a href="#">Updated Price by SKU</a>
+													</li>
+													<li>
+														<a href="#">Update Description</a>
+													</li>
+													<li>
+														<a href="#">Update Description by SKU</a>
+													</li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="item-marketplace  level-0">
+						<a href="#" class="disabled">Marketplace</a>
+					</li>
+					<li class="item-stores  level-0">
+						<a href="#" class="disabled">Stores</a>
+					</li>
+					<li class="item-system  level-0">
+						<a href="#" class="disabled">System</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<!-- End Menu Bar -->
+		<div class="page-wrapper">
+			<main class="page-content">
+				<div class="page-sales-orders">
+					<div class="page-header row">
+						<div class="page-header-hgroup col-sm-6">
+							<div class="page-title-wrapper">
+								<h1 class="page-title">Manage RMA</h1>
+							</div>
+						</div>
+						<div class="page-header-actions col-sm-6">
+							<div class="admin-user">
+					            <a href="#" class="admin__action-dropdown disabled" title="My Account">
+				                    <span class="admin-user-account-text">admin user</span>
+					            </a>
+					            <ul class="admin__action-dropdown-menu">
+	                                <li>
+					                    <a href="#">
+					                        Account Setting (<span class="admin-user-name">Admin User</span>)
+					                    </a>
+					                </li>
+	                                <li>
+					                    <a href="#" title="Customer View" target="_blank" class="store-front">
+					                        Customer View
+					                    </a>
+					                </li>
+					                <li>
+					                    <a href="#" class="account-signout" title="Sign Out">
+					                        Sign Out
+					                    </a>
+					                </li>
+					            </ul>
+					        </div>
+							<div class="notifications-wrapper">
+					            <a href="#" title="Notifications" class="disabled">
+						            <span class="notifications-counter">
+						                9
+						            </span>
+						        </a>
+						        <ul class="admin__action-dropdown-menu">
+	                                <li class="notifications-entry" data-notification-id="374" data-notification-severity="">
+	                                    <strong class="notifications-entry-title">
+					                        Your export file is ready                    
+					                    </strong>
+	                                    <p class="notifications-entry-description">
+				                            You can pick up your file at export main page                        
+				                        </p>
+	                                    <time class="notifications-entry-time">
+					                        Jul 9, 2021, 10:05:17 PM                    
+					                    </time>
+					                    <button type="button" class="notifications-close" title="Close"></button>
+					                </li>
+	                                <li class="notifications-entry" data-notification-id="373" data-notification-severity="">
+	                                    <strong class="notifications-entry-title">
+					                        Your export file is ready                    
+					                    </strong>                 
+	                                    <p class="notifications-entry-description">
+				                            You can pick up your file at export main page                        
+				                        </p>
+	                                    <time class="notifications-entry-time">
+					                        Jul 9, 2021, 8:51:02 PM                    
+					                    </time>
+					                    <button type="button" class="notifications-close" title="Close"></button>
+					                </li>
+	                                <li class="notifications-entry" data-notification-id="372" data-notification-severity="">
+	                                    <strong class="notifications-entry-title">
+					                        Your export file is ready                    
+					                    </strong>
+	                                	<p class="notifications-entry-description">
+				                            You can pick up your file at export main page                        
+				                        </p>
+	                                    <time class="notifications-entry-time">
+					                        Jul 9, 2021, 5:33:04 AM                    
+					                    </time>
+					                    <button type="button" class="notifications-close" title="Close"></button>
+					                </li>
+			                        <li class="notifications-entry notifications-entry-last">
+						                <a href="#" class="action-tertiary action-more">
+						                    See All (<span class="notifications-counter">9</span> unread)                
+						                </a>
+						            </li>
+						        </ul>
+						    </div>
+							<div class="search-global">
+							    <form action="#" id="form-search">
+							        <div class="search-global-field">
+							            <label class="search-global-label" for="search-global"></label>
+							            <input class="search-global-input" type="text" name="query" value="">
+		                                <button type="submit" class="search-global-action" title="Search"></button>
+							        </div>
+							    </form>
+							</div>
+						</div>
+					</div>
+					<div class="page-main-actions">    
+						<div class="page-actions">
+							<div class="page-actions-inner">
+								<div class="page-actions-buttons">
+				        			<button type="button" class="action- scalable primary" onclick="location.href = 'rma-create.html';">
+									    <span>New Request</span>
+									</button>
+				    			</div>
+				    		</div>
+				    	</div>
+					</div>
+					<div class="page-main-container">
+						<div class="admin__data-grid-header">
+							<div class="admin-data-grid-actions">
+								<div class="admin-dropdown view">
+									<button class="admin__action-dropdown" type="button">
+        								<span>
+        									Default View
+        								</span>
+   	 								</button>
+   	 								<ul class="admin-dropdown-menu">
+        								<li>								
+										    <a href="" class="action-dropdown-menu-link">Default View</a> 
+										</li>
+										<li>								
+										    <a href="" class="action-dropdown-menu-link">Issue Refund</a> 
+										</li>
+										<li>								
+										    <a href="" class="action-dropdown-menu-link">Package Received</a> 
+										</li>
+										<li>								
+										    <a href="" class="action-dropdown-menu-link">Package Sent</a> 
+										</li>
+										<li>								
+										    <a href="" class="action-dropdown-menu-link">Pending Approval</a> 
+										</li>
+									</ul>
+								</div>
+								<div class="admin-dropdown columns">
+									<button class="admin__action-dropdown" type="button">
+        								<span>
+        									Columns
+        								</span>
+   	 								</button>
+   	 								<div class="admin-dropdown-menu">
+        								<div class="admin__action-dropdown-menu-header">10 out of 14 visible</div>
+        								<div class="admin__action-dropdown-menu-content">
+								        	<div class="admin__field-option">
+								                <input type="checkbox"  id="2">
+								                <label>Request #</label>
+								            </div>
+								            <div class="admin__field-option">
+								                <input type="checkbox"  id="3">
+								                <label>Order #</label>
+								            </div>
+								            <div class="admin__field-option">
+								                <input type="checkbox"  id="4">
+								                <label>Payment Method</label>
+								            </div>
+								            <div class="admin__field-option">
+								                <input type="checkbox"  id="5">
+								                <label>Product(s)</label>
+								            </div>
+								            <div class="admin__field-option">
+								                <input type="checkbox"  id="6">
+								                <label>Last Reply by</label>
+								            </div>
+								            <div class="admin__field-option">
+								                <input type="checkbox"  id="7">
+								                <label>Status</label>
+								            </div>
+								            <div class="admin__field-option">
+								                <input type="checkbox"  id="8">
+								                <label>Store</label>
+								            </div>
+								            <div class="admin__field-option">
+								                <input type="checkbox"  id="9">
+								                <label>Updated At</label>
+								            </div>
+								            <div class="admin__field-option">
+								                <input type="checkbox"  id="10">
+								                <label>Created At</label>
+								            </div>
+								            <div class="admin__field-option">
+								                <input type="checkbox"  id="11">
+								                <label>Action</label>
+								            </div>
+								            <div class="admin__field-option">
+								                <input type="checkbox"  id="12">
+								                <label>Resolution</label>
+								            </div>
+								            <div class="admin__field-option">
+								                <input type="checkbox"  id="13">
+								                <label>Package Condition</label>
+								            </div>
+								            <div class="admin__field-option">
+								                <input type="checkbox"  id="14">
+								                <label>Replacement</label>
+								            </div>
+								            <div class="admin__field-option">
+								                <input type="checkbox"  id="15">
+								                <label>Customer</label>
+								            </div>
+								        </div>
+								        <div class="admin__action-dropdown-menu-footer">
+								            <div class="admin__action-dropdown-footer-secondary-actions">
+								                <button class="action-tertiary" type="button">Reset</button>
+								            </div>
+								            <div class="admin__action-dropdown-footer-main-actions">
+								                <button class="action-tertiary" type="button">Cancel</button>
+								            </div>
+								        </div>
+									</div>
+								</div>
+								<div class="admin-dropdown export">
+									<button class="admin__action-dropdown" type="button">
+        								<span>
+        									Export
+        								</span>
+   	 								</button>
+   	 								<div class="admin-dropdown-menu">
+        								<div class="admin__field admin__field-option">
+								            <input class="admin__control-radio" type="radio">
+								            <label class="admin__field-label">CSV</label>
+								        </div>
+								        <div class="admin__field admin__field-option">
+								            <input class="admin__control-radio" type="radio">
+								            <label class="admin__field-label">Excel XML</label>
+								        </div>
+								        <div class="admin__action-dropdown-footer-main-actions">
+								            <button class="action-tertiary" type="button">Cancel</button>
+								            <button class="action-secondary" type="button">Export</button>
+								        </div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="data-grid-filters-actions-wrap">
+								<div class="admin-filter-dropdown export">
+									<button class="admin__action-dropdown" type="button">
+        								<span>
+        									Filters
+        								</span>
+   	 								</button>
+								</div>
+							</div>
+							<div class="admin__data-grid-filters-wrap">
+								<fieldset class="admin__fieldset">
+									<fieldset class="form-field">
+										<legend class="form-field-legend">
+										    <span>Updated At</span>
+										</legend>
+										<div class="form-field form-field1">
+											<label class="label">
+											    <span>from</span>
+											</label>
+											<div class="control">
+												<input type="date">
+											</div>
+										</div>
+										<div class="form-field form-field1">
+											<label class="label">
+											    <span>to</span>
+											</label>
+											<div class="control">
+												<input type="date">
+											</div>
+										</div>
+									</fieldset>
+									<fieldset class="form-field">
+										<legend class="form-field-legend">
+										    <span>Created At</span>
+										</legend>
+										<div class="form-field form-field1">
+											<label class="label">
+											    <span>from</span>
+											</label>
+											<div class="control">
+												<input type="date">
+											</div>
+										</div>
+										<div class="form-field form-field1">
+											<label class="label">
+											    <span>to</span>
+											</label>
+											<div class="control">
+												<input type="date">
+											</div>
+										</div>
+									</fieldset>
+									<fieldset class="form-field">
+										<legend class="form-field-legend">
+										    <span>Purchase Point</span>
+										</legend>
+										<div class="form-field">
+											
+											<div class="control">
+												<select>
+													<option>All Store Views</option>
+													<optgroup label="Idropship"></optgroup>
+													<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;Main Website Store"></optgroup>
+													<option data-title="Idropship/Main Website Store/Australia" value="1">     Australia</option>
+													<option data-title="Idropship/Main Website Store/New Zealand" value="2">     New Zealand</option>
+													<option data-title="Idropship/Main Website Store/Wholesale Bay" value="3">     Wholesale Bay</option>
+												</select>
+											</div>
+										</div>
+									</fieldset>
+									<fieldset class="form-field">
+										<legend class="form-field-legend">
+										    <span>Customer</span>
+										</legend>
+										<div class="form-field">
+											<div class="control">
+												<input type="text" name="">
+											</div>
+										</div>
+									</fieldset>
+									<fieldset class="form-field">
+										<legend class="form-field-legend">
+										    <span>Request #</span>
+										</legend>
+										<div class="form-field">
+											<div class="control">
+												<input type="text" name="">
+											</div>
+										</div>
+									</fieldset>
+									<fieldset class="form-field">
+										<legend class="form-field-legend">
+										    <span>Order #</span>
+										</legend>
+										<div class="form-field">
+											<div class="control">
+												<input type="text" name="">
+											</div>
+										</div>
+									</fieldset>
+									<fieldset class="form-field">
+										<legend class="form-field-legend">
+										    <span>Product(s)</span>
+										</legend>
+										<div class="form-field">
+											<div class="control">
+												<input type="text" name="">
+											</div>
+										</div>
+									</fieldset>
+									<fieldset class="form-field">
+										<legend class="form-field-legend">
+										    <span>Last Reply by</span>
+										</legend>
+										<div class="form-field">
+											<div class="control">
+												<select class="admin__control-select">
+													<option value=""> </option>
+													<option>Admin</option>
+													<option>Customer</option>
+												</select>
+											</div>
+										</div>
+									</fieldset>
+									<fieldset class="form-field">
+										<legend class="form-field-legend">
+										    <span>Status</span>
+										</legend>
+										<div class="form-field">
+											<div class="control">
+												<select class="admin__control-select">
+													<option value=""> </option>
+													<option>Awaiting Seller's Response</option>
+													<option>Pending Approval</option>
+													<option>Approved</option>
+													<option>Finding Resolution</option>
+													<option>Package Sent</option>
+													<option>Return Label Shared</option>
+													<option>Package Received</option>
+													<option>Replacement</option>
+													<option>Issue Refund</option>
+													<option>Closed</option>
+													<option>Canceled</option>
+												</select>
+											</div>
+										</div>
+									</fieldset>
+									
+								</fieldset>
+								<div class="admin__data-grid-filters-footer">
+							        <div class="admin__footer-main-actions">
+							            <button class="action-tertiary" type="button">
+							                <span>Cancel</span>
+							            </button>
+							            <button class="action-secondary" type="button">
+							                <span>Apply Filters</span>
+							            </button>
+							        </div>
+							    </div>
+							</div>
+						</div>
+						<div class="admin-pager-action row">
+							<div class="col-xs-2 col-sm-2">
+								<div class="action-select-wrap1">
+								    <button class="action-select">
+								        <span>Actions</span>
+								    </button>
+								    <div class="action-menu-items">
+								        <ul class="action-menu">
+								            <li>
+								                <span class="action-menu-item">Change Status</span>
+								                <ul class="action-menu-sub" style="display: none;">
+								                	<li>
+								                		<span class="action-menu-item">Awaiting Seller's Response</span>
+								                	</li>
+								                	<li>
+								                		<span class="action-menu-item">Pending Approval</span>
+								                	</li>
+								                	<li>
+								                		<span class="action-menu-item">Approved</span>
+								                	</li>
+								                	<li>
+								                		<span class="action-menu-item">Finding Resolution</span>
+								                	</li>
+								                	<li>
+								                		<span class="action-menu-item">Package Sent</span>
+								                	</li>
+								                	<li>
+								                		<span class="action-menu-item">Return Label Shared</span>
+								                	</li>
+								                	<li>
+								                		<span class="action-menu-item">Package Received</span>
+								                	</li>
+								                	<li>
+								                		<span class="action-menu-item">Replacement</span>
+								                	</li>
+								                	<li>
+								                		<span class="action-menu-item">Issue Refund</span>
+								                	</li>
+								                	<li>
+								                		<span class="action-menu-item">Closed</span>
+								                	</li>
+								                	<li>
+								                		<span class="action-menu-item">Canceled</span>
+								                	</li>
+								                </ul>
+								            </li>
+								        </ul>
+								    </div>
+								</div>
+							</div>
+							<div class="col-xs-10 col-sm-10">
+					            <div class="row">
+					                <div class="col-xs-3 col-sm-3">
+										<div class="admin__control-support-text">
+					    					54259<span> records found</span>
+										</div>
+									</div>
+					                <div class="col-xs-9 col-sm-9">
+										<div class="admin__data-grid-pager-wrap">
+											<div class="selectmenu" data-bind="collapsible">
+											    <div class="selectmenu-items">
+											        <select>
+											            <option>20</option>
+											            <option>30</option>
+											            <option>50</option>
+											            <option>100</option>
+											        </select>
+											    </div>
+											</div>
+											<label class="admin__control-support-text">per page</label>
+										    <div class="admin__data-grid-pager">
+										        <button class="action-previous" type="button" disabled=""></button>
+										        <input class="admin__control-text" type="number" value="1">
+										        <label class="admin__control-support-text">of 2713</label>
+										        <button class="action-next" type="button"></button>
+										    </div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="admin__data-grid-wrap">
+							<table class="data-grid data-grid-draggable">
+								<thead>
+									<tr>
+										<th class="data-grid-multicheck-cell">
+											<div class="action-multicheck-wrap">
+												<input class="admin__control-checkbox" type="checkbox" id="select-all" name="select all">
+												<button class="action-multicheck-toggle"><span>Options</span></button>
+												<ul class="action-menu" for="select-all">
+										            <li>
+										                <span class="action-menu-item">Select All</span>
+										            </li>
+										            <li style="display: none;">
+										                <span class="action-menu-item">Deselect All</span>
+										            </li>
+										            <li>
+										                <span class="action-menu-item">Select All on This Page</span>
+										            </li>
+										            <li style="display: none;">
+										                <span class="action-menu-item">Deselect All on This Page</span>
+										            </li>
+										        </ul>
+											</div>
+										</th>
+										<th class="data-grid-th  _sortable _descend">
+											<span class="data-grid-cell-content">Request #</span>
+										</th>
+										<th class="data-grid-th">
+											<span class="data-grid-cell-content">Order #</span>
+										</th>
+										<th class="data-grid-th ">
+											<span class="data-grid-cell-content">Customer</span>
+										</th>
+										<th class="data-grid-th ">
+											<span class="data-grid-cell-content">Product(s)</span>
+										</th>
+										<th class="data-grid-th">
+											<span class="data-grid-cell-content ">Last Reply by</span>
+										</th>
+										<th class="data-grid-th">
+											<span class="data-grid-cell-content">Status</span>
+										</th>
+										<th class="data-grid-th">
+											<span class="data-grid-cell-content">Store</span>
+										</th>
+										<th class="data-grid-th">
+											<span class="data-grid-cell-content">Updated At</span>
+										</th>
+										<th class="data-grid-th">
+											<span class="data-grid-cell-content">Created At</span>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="data-row">
+										<td class="data-grid-checkbox-cell">
+										    <input class="admin__control-checkbox" type="checkbox">
+										</td>
+										<td>
+											<div class="data-grid-cell-content">000001500</div>
+										</td>
+										<td>
+											<div class="data-grid-cell-content">93597512</div>
+										</td>
+										<td>
+											<div class="data-grid-cell-content">manav khanna, Rams_store@hotmail.com</div>
+										</td>
+										<td class="data-grid-actions-cell">
+											<div class="data-grid-cell-content">Mountview Gazebo Tent 3x6 Outdoor Marquee Gazebos Camping Canopy Mesh Side Wall</div>
+										</td>
+										<td>
+											<div class="data-grid-cell-content">Customer</div>
+										</td>
+										<td>
+											<div class="data-grid-cell-content">Pending Approval</div>
+										</td>
+										<td>
+											<div class="data-grid-cell-content">Idropship<br>&nbsp;&nbsp;&nbsp;Main Website Store<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Australia<br></div>
+										</td>
+										<td>
+											<div class="data-grid-cell-content">Jul 22, 2021 6:56:50 PM</div>
+										</td>
+										<td>
+											<div class="data-grid-cell-content">Jul 22, 2021 6:56:50 PM</div>
+										</td>
+						            </tr>
+						            <tr class="data-row">
+										<td class="data-grid-checkbox-cell">
+										    <input class="admin__control-checkbox" type="checkbox">
+										</td>
+										<td>
+											<div class="data-grid-cell-content">000001500</div>
+										</td>
+										<td>
+											<div class="data-grid-cell-content">93597512</div>
+										</td>
+										<td>
+											<div class="data-grid-cell-content">manav khanna, Rams_store@hotmail.com</div>
+										</td>
+										<td class="data-grid-actions-cell">
+											<div class="data-grid-cell-content">Mountview Gazebo Tent 3x6 Outdoor Marquee Gazebos Camping Canopy Mesh Side Wall</div>
+										</td>
+										<td>
+											<div class="data-grid-cell-content">Customer</div>
+										</td>
+										<td>
+											<div class="data-grid-cell-content">Pending Approval</div>
+										</td>
+										<td>
+											<div class="data-grid-cell-content">Idropship<br>&nbsp;&nbsp;&nbsp;Main Website Store<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Australia<br></div>
+										</td>
+										<td>
+											<div class="data-grid-cell-content">Jul 22, 2021 6:56:50 PM</div>
+										</td>
+										<td>
+											<div class="data-grid-cell-content">Jul 22, 2021 6:56:50 PM</div>
+										</td>
+						            </tr>
+						            <tr class="data-row">
+										<td class="data-grid-checkbox-cell">
+										    <input class="admin__control-checkbox" type="checkbox">
+										</td>
+										<td>
+											<div class="data-grid-cell-content">000001500</div>
+										</td>
+										<td>
+											<div class="data-grid-cell-content">93597512</div>
+										</td>
+										<td>
+											<div class="data-grid-cell-content">manav khanna, Rams_store@hotmail.com</div>
+										</td>
+										<td class="data-grid-actions-cell">
+											<div class="data-grid-cell-content">Mountview Gazebo Tent 3x6 Outdoor Marquee Gazebos Camping Canopy Mesh Side Wall</div>
+										</td>
+										<td>
+											<div class="data-grid-cell-content">Customer</div>
+										</td>
+										<td>
+											<div class="data-grid-cell-content">Pending Approval</div>
+										</td>
+										<td>
+											<div class="data-grid-cell-content">Idropship<br>&nbsp;&nbsp;&nbsp;Main Website Store<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Australia<br></div>
+										</td>
+										<td>
+											<div class="data-grid-cell-content">Jul 22, 2021 6:56:50 PM</div>
+										</td>
+										<td>
+											<div class="data-grid-cell-content">Jul 22, 2021 6:56:50 PM</div>
+										</td>
+						            </tr>
+						            <tr class="data-row">
+										<td class="data-grid-checkbox-cell">
+										    <input class="admin__control-checkbox" type="checkbox">
+										</td>
+										<td>
+											<div class="data-grid-cell-content">000001500</div>
+										</td>
+										<td>
+											<div class="data-grid-cell-content">93597512</div>
+										</td>
+										<td>
+											<div class="data-grid-cell-content">manav khanna, Rams_store@hotmail.com</div>
+										</td>
+										<td class="data-grid-actions-cell">
+											<div class="data-grid-cell-content">Mountview Gazebo Tent 3x6 Outdoor Marquee Gazebos Camping Canopy Mesh Side Wall</div>
+										</td>
+										<td>
+											<div class="data-grid-cell-content">Customer</div>
+										</td>
+										<td>
+											<div class="data-grid-cell-content">Pending Approval</div>
+										</td>
+										<td>
+											<div class="data-grid-cell-content">Idropship<br>&nbsp;&nbsp;&nbsp;Main Website Store<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Australia<br></div>
+										</td>
+										<td>
+											<div class="data-grid-cell-content">Jul 22, 2021 6:56:50 PM</div>
+										</td>
+										<td>
+											<div class="data-grid-cell-content">Jul 22, 2021 6:56:50 PM</div>
+										</td>
+						            </tr>
+						            <tr class="data-row">
+										<td class="data-grid-checkbox-cell">
+										    <input class="admin__control-checkbox" type="checkbox">
+										</td>
+										<td>
+											<div class="data-grid-cell-content">000001500</div>
+										</td>
+										<td>
+											<div class="data-grid-cell-content">93597512</div>
+										</td>
+										<td>
+											<div class="data-grid-cell-content">manav khanna, Rams_store@hotmail.com</div>
+										</td>
+										<td class="data-grid-actions-cell">
+											<div class="data-grid-cell-content">Mountview Gazebo Tent 3x6 Outdoor Marquee Gazebos Camping Canopy Mesh Side Wall</div>
+										</td>
+										<td>
+											<div class="data-grid-cell-content">Customer</div>
+										</td>
+										<td>
+											<div class="data-grid-cell-content">Pending Approval</div>
+										</td>
+										<td>
+											<div class="data-grid-cell-content">Idropship<br>&nbsp;&nbsp;&nbsp;Main Website Store<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Australia<br></div>
+										</td>
+										<td>
+											<div class="data-grid-cell-content">Jul 22, 2021 6:56:50 PM</div>
+										</td>
+										<td>
+											<div class="data-grid-cell-content">Jul 22, 2021 6:56:50 PM</div>
+										</td>
+						            </tr>
+						            <tr class="data-row">
+										<td class="data-grid-checkbox-cell">
+										    <input class="admin__control-checkbox" type="checkbox">
+										</td>
+										<td>
+											<div class="data-grid-cell-content">000001500</div>
+										</td>
+										<td>
+											<div class="data-grid-cell-content">93597512</div>
+										</td>
+										<td>
+											<div class="data-grid-cell-content">manav khanna, Rams_store@hotmail.com</div>
+										</td>
+										<td class="data-grid-actions-cell">
+											<div class="data-grid-cell-content">Mountview Gazebo Tent 3x6 Outdoor Marquee Gazebos Camping Canopy Mesh Side Wall</div>
+										</td>
+										<td>
+											<div class="data-grid-cell-content">Customer</div>
+										</td>
+										<td>
+											<div class="data-grid-cell-content">Pending Approval</div>
+										</td>
+										<td>
+											<div class="data-grid-cell-content">Idropship<br>&nbsp;&nbsp;&nbsp;Main Website Store<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Australia<br></div>
+										</td>
+										<td>
+											<div class="data-grid-cell-content">Jul 22, 2021 6:56:50 PM</div>
+										</td>
+										<td>
+											<div class="data-grid-cell-content">Jul 22, 2021 6:56:50 PM</div>
+										</td>
+						            </tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+		</main>
+	</div>
+
+
+
+
+
+		<!-- Popup if error -->  
+
+		<div class="modals-wrapper">
+			<aside role="dialog" class="modal-popup" style="z-index: 902;">
+			    <div class="modal-inner-wrap">
+			        <header class="modal-header">
+            			<h1 id="modal-title-13" class="modal-title">
+                    		Attention
+			            </h1>
+			            <button class="action-close" data-role="closeBtn" type="button">
+			                <span>Close</span>
+			            </button>
+			        </header>
+			        <div class="modal-content"><div>You haven't selected any items!</div></div>
+			        <footer class="modal-footer">
+			            <button class="action-primary action-accept" type="button" data-role="action"><span>OK</span></button>
+			        </footer>
+			    </div>
+			</aside>
+			<div class="modals-overlay" style="z-index: 901;"></div>
+		</div>
+	</body>
+<script type="text/javascript" src="js/custom.js"></script>
+</html>

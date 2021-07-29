@@ -1,0 +1,7 @@
+@import "~bootstrap/scss/bootstrap";
+.admin__menu ul#nav > li > a.nuxt-link-active {
+    background-color: #4a4542;
+  }
+  .admin__menu ul#nav > li > .submenu .column li {
+    list-style: none;
+  }

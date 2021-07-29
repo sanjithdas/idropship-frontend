@@ -1,0 +1,31 @@
+{
+  "name": "idropship",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "@nuxtjs/axios": "^5.13.6",
+    "@nuxtjs/pwa": "^3.3.5",
+    "@popperjs/core": "^2.9.2",
+    "autoprefixer": "^10.3.1",
+    "bootstrap": "^5.0.2",
+    "chart.js": "^2.9.0",
+    "core-js": "^3.15.1",
+    "easy-pie-chart": "^2.1.7",
+    "jquery": "^3.6.0",
+    "moment": "^2.29.1",
+    "nuxt": "^2.15.7",
+    "vue-chartjs": "^3.5.1"
+  },
+  "devDependencies": {
+    "fibers": "^5.0.0",
+    "sass": "^1.35.2",
+    "sass-loader": "10"
+  }
+}
